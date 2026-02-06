@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktabgacha ta’lim uchun o‘yinlar platformasi</title>
+    <meta name="description"
+        content="Maktabgacha ta’lim muassasalari uchun mo‘ljallangan bolalar o‘yinlari va rivojlantiruvchi platforma.">
+    <meta name="keywords" content="maktabgacha ta'lim, bolalar o'yinlari, edu play, ta'limiy o'yinlar">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Maktabgacha ta’lim muassasalari uchun mo‘ljallangan bolalar o‘yinlari va rivojlantiruvchi ta’lim platformasi. Bolalarning o‘yin jarayonini kuzatish va ta’lim sifatini oshirish uchun yaratilgan veb-sayt.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>EduPlay 365</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span
+                            data-i18n="home">Home</span></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> <span data-i18n="login">Login</span></a>
+                </li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> <span data-i18n="settings">Settings</span></a>
+                </li>
+                <li><a href="help.html"><i class="fas fa-question-circle"></i> <span data-i18n="help">Help</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <div class="language-switcher">
+                <select id="lang-select"
+                    style="width: 100%; padding: 0.5rem; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 0.5rem;">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="page-title">
+                <h1 data-i18n="welcome">Welcome to EduPlay 365</h1>
+            </div>
+            <div class="user-profile">
+                <i class="fas fa-user-circle" style="font-size: 2rem;"></i>
+            </div>
+        </header>
+
+        <section class="cards-grid">
+            <!-- Card 1 -->
+            <a href="game-1.html" class="card">
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <h3 data-i18n="math_title">Math Blaster</h3>
+                <p data-i18n="math_desc">Learn mathematics through exciting space adventures.</p>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="game-2.html" class="card">
+                <div class="card-icon"><i class="fas fa-flask"></i></div>
+                <h3 data-i18n="science_title">Science Lab</h3>
+                <p data-i18n="science_desc">Experiment with virtual chemistry and physics labs.</p>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="game-3.html" class="card">
+                <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+                <h3 data-i18n="geo_title">Geography Quiz</h3>
+                <p data-i18n="geo_desc">Explore the world and test your knowledge of countries.</p>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="game-4.html" class="card">
+                <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                <h3 data-i18n="lit_title">Literature Quest</h3>
+                <p data-i18n="lit_desc">Dive into classic stories and improve reading skills.</p>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="game-5.html" class="card">
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <h3 data-i18n="logic_title">Logic Puzzles</h3>
+                <p data-i18n="logic_desc">Challenge your brain with complex riddles and puzzles.</p>
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
