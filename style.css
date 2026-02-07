@@ -42,7 +42,7 @@ html {
     height: 100%;
     /* Dark mode default overlay */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.png');
-    background-size: cover;
+    background-size: cover left;
     background-position: center left;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -662,4 +662,5 @@ input[type=range]::-moz-range-thumb {
     background: #ef4444;
     color: white;
 }
+
 
