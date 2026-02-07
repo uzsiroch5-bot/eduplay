@@ -10,7 +10,6 @@
     --glass-border: 1px solid rgba(255, 255, 255, 0.1);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --sidebar-bg: rgba(15, 23, 42, 0.6);
-    --bg-overlay-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Light Mode Variables */
@@ -24,12 +23,11 @@ body.light-mode {
     --glass-border: 1px solid rgba(0, 0, 0, 0.1);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --sidebar-bg: rgba(255, 255, 255, 0.8);
-    --bg-overlay-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Light mode background override */
 body.light-mode html {
-    background-image: linear-gradient(var(--bg-overlay-color), var(--bg-overlay-color)), url('bg.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('bg.png');
 }
 
 
@@ -42,14 +40,22 @@ body.light-mode html {
 
 html {
     height: 100%;
-    background-image: linear-gradient(var(--bg-overlay-color), var(--bg-overlay-color)), url('bg.png');
-    background-size: 100vw 100%;
-    /* Force width to match viewport for seamless loop calculation */
+    /* Dark mode default overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg.png');
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: slideBackground 0s linear infinite;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("bg-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 
 body {
     position: relative;
